@@ -1,0 +1,2 @@
+# ideologijas
+ grupas darbs
