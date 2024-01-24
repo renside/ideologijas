@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-    <title>Bootstrap</title>
+    <title>Ideoloģijas</title>
+    <style>
+      #8{
+        z-index: 1;
+      }
+    </style>
     <nav class="menu-background">
     <nav class="navbar navbar-expand ">
       <div class="container">
         <div class="btn-group ">
           <button type="button" onclick="rezimi()" class="btn btn-secondary" >Režīmi</button>
           <button type="button" onclick="vesture()" class="btn btn-secondary">Vēsture</button>
-          <button type="button" onclick="openNewPage()" class="btn btn-secondary">Papildus materiali</button>
+          <button type="button" onclick="openNewPage()" class="btn btn-secondary">Papildus materiāli</button>
         </div>
         <div class="justify-content-end">
           <ul class="navbar-nav">
@@ -44,28 +47,182 @@
         function rezimi(){
           document.getElementById("1").innerHTML='POLITISKIE REŽĪMI';
           document.getElementById("11").innerHTML='Politiskie režīmi';
-          document.getElementById("2").innerHTML='Politiskais režīms ir valsts vai sabiedriskās sistēmas organizācija un pārvaldība, kuras pamatā ir noteikti politiskie principi, institūcijas un varas struktūras. Šie režīmi nosaka, kā tiek pieņemti lēmumi, kā tiek izvēlēti valsts vadītāji, kā notiek vara sadalījums un kādas ir attiecības starp valdību un pilsonisko sabiedrību. Politiskie režīmi var ieviest dažādas valdības formas un ideoloģijas. Latvija ir demokrātiska valsts, to garantē Latvijas Satversme. Pirmais pants nosaka, ka Latvija ir demokrātiska republika, 2.pants, ka vara pieder Latvijas tautai. Cilvēktiesību jautājumi aplūkoti Satversmes 8.nodaļā.';
-          document.getElementById("3").innerHTML='Atšķirības';
-          document.getElementById("4").innerHTML='Politiskie režīmi atšķiras pēc to organizācijas, varas sadalījuma, lēmumu pieņemšanas procesa un attiecībām ar pilsonisko sabiedrību. Veidi:';
-          document.getElementById("4.1").className='col-md-6 bg-light text-dark p-4';
-          document.getElementById("5.1").className='col-6 bg-light text-dark p-4';
-          document.getElementById("5").innerHTML='Demokrātija: Varas izcelsme no pilsoņiem, lēmumu pieņemšana notiek balsojot. Varas sadalījums un iestāžu neatkarība. Autoritārisms: Centrālā vara kontrolē politisko procesu, lēmumu pieņemšana ierobežota. Varas koncentrācija centrālajā valdībā vai autoritatīvajā iestādē. Totalitārisms: Valdības kontrole pār gandrīz visiem sabiedrības aspektiem. Represijas un pilnvaru koncentrēšana valsts rokās. Monarhija: Valsts vadītājs ir monarhs, var būt ķēnišs vai ķēnē. Var būt absolūta monarhija ar pilnu varu vai konstitucionāla ar ierobežojumiem. Sociālisms un komunisms: Valsts kontrole pār ekonomiku un produktīvajiem resursiem, bet ar atšķirīgu pieeju klases neesamībai un īpašuma pārejai sabiedriskajā īpašumā.';
-          document.getElementById("6").innerHTML='Politisko režīmu attīstība';
-          document.getElementById("7").innerHTML='Šeit ir daži piemēri, kā ir mainījušies politiskie režīmi pasaules vēsturē:';
-          document.getElementById("8").innerText='Senatnē un Feodālismā\nAbsolūtā Monarhija\nDemokrātijas attīstība\nAutoritārisma un Totalitārisma uzplaukums\nDecolonization un Globalizācijas un pārejas uz demokrātiju';         
-           document.getElementById("9").innerHTML='sdsda';
-        }
-        function vesture(){
-          document.getElementById("1").innerHTML='VĒSTURE';
-          document.getElementById("11").innerHTML='Vēsture';
-          document.getElementById("2").innerHTML='Populārākie piemēri:\nDemokrātija - ASV: Amerikas Savienotās Valstis ir federāla republika ar demokrātisku valdības formu, kurā notiek gan prezidenta, gan kongresa vēlēšanas.\nVācija: Vācija ir parlamentāra republika, kur pilsoņi piedalās vēlēšanās, lai izvēlētos parlamentu un kancleri.\nAutoritārisms - Krievija: Krievija ir autoritāra valsts, kur centrālo varu koncentrē prezidents un valdības vadība. Ir ierobežota politiskā brīvība un plašs kontrole pār medijiem. Kļinas režīms Korejā: Ziemeļkoreja ir totalitāra valsts ar centrālizētu varu, kas kontrolē visus aspektus sabiedrības dzīvē.';
-          document.getElementById("3").innerHTML='Totalitārisms';
-          document.getElementById("4").innerHTML='Totalitārisms bija Padomju Savienībā, nacistu varas laikā Vācijā, un Musolīni diktatūras (fašisma) laikā Itālijā.';
+          document.getElementById("2").innerHTML='Politiskā situācija, politiskā sistēma valstī, varas veidošanās un dalīšanās process, varas resursu izvietojums un to izmantošana - tie visi ir faktori, kas veido politiskās attiecības valstī. Svarīga nozīme to skaidrojumā un izpratnē ir politiskā režīma jēdzienam. PSRS, Itālijas, Vācijas, Amerikas, arī Latvijas un citu valsts veidošanos būtiski un radikāli ir ietekmējuši politiskie režīmi. Politiskie režīmi, to izpratne ir neatņemama sastāvdaļa no vēstures, politikas, arī no tā, kā mēs to izprotam un redzam mūsdienās.';
+          document.getElementById("3").innerHTML='Režīmi un to raksturojums';
+          document.getElementById("4").innerHTML='Demokrātija: Varas izcelsme no pilsoņiem, lēmumu pieņemšana notiek balsojot. Varas sadalījums un iestāžu neatkarība.<br><br> Autoritārisms: Centrālā vara kontrolē politisko procesu, lēmumu pieņemšana ierobežota. Varas koncentrācija centrālajā valdībā vai autoritatīvajā iestādē.<br><br>  Totalitārisms: Valdības kontrole pār gandrīz visiem sabiedrības aspektiem. Represijas un pilnvaru koncentrēšana valsts rokās.<br><br>Monarhija: Valsts vadītājs ir monarhs, var būt ķēnišs vai ķēnē. Var būt absolūta monarhija ar pilnu varu vai konstitucionāla ar ierobežojumiem.<br><br>Sociālisms un komunisms: Valsts kontrole pār ekonomiku un produktīvajiem resursiem, bet ar atšķirīgu pieeju klases neesamībai un īpašuma pārejai sabiedriskajā īpašumā.';
           document.getElementById("4.1").className='col-md-12 bg-light text-dark p-4';
           document.getElementById("5.1").className='col-0 bg-light text-dark p-4';
           document.getElementById("5").innerHTML='';
-          document.getElementById("6").innerHTML='Politisko režīmu attīstība';
-          document.getElementById("7").innerHTML='Šeit ir daži piemēri, kā ir mainījušies politiskie režīmi pasaules vēsturē:';
-          document.getElementById("8").innerText='Senatnē un Feodālismā\nAbsolūtā Monarhija\nDemokrātijas attīstība\nAutoritārisma un Totalitārisma uzplaukums\nDecolonization un Globalizācijas un pārejas uz demokrātiju';
+          document.getElementById("6").innerHTML='Kāds ir Latvijas režīma veids?';
+          document.getElementById("7").innerHTML='Latvija ir demokrātiska valsts, to garantē Latvijas Satversme. Pirmais pants nosaka, ka Latvija ir demokrātiska republika, 2.pants, ka vara pieder Latvijas tautai. Cilvēktiesību jautājumi aplūkoti Satversmes 8.nodaļā. ';
+          document.getElementById("8").innerText='Latvijā nav likuma, kas nosaka vispārējus iedzīvotāju pienākumus pret valsti, tiek uzskatīts, ka ikviena cilvēka pienākums ir ievērot likumus. Likumos ir norādīti atsevišķu sociālo un profesionālo grupu, arī amatpersonu pienākumi.';          
           document.getElementById("9").innerHTML='';
         }
+        function vesture(){
+          document.getElementById("1").innerHTML='VĒSTURE';
+          document.getElementById("11").innerHTML='Lielāko valstu režīmu piemēri un raksturojumi:';
+          document.getElementById("2").innerHTML='Populārākie piemēri:\nDemokrātija - ASV: Amerikas Savienotās Valstis ir federāla republika ar demokrātisku valdības formu, kurā notiek gan prezidenta, gan kongresa vēlēšanas.\nVācija: Vācija ir parlamentāra republika, kur pilsoņi piedalās vēlēšanās, lai izvēlētos parlamentu un kancleri.\nAutoritārisms - Krievija: Krievija ir autoritāra valsts, kur centrālo varu koncentrē prezidents un valdības vadība. Ir ierobežota politiskā brīvība un plašs kontrole pār medijiem. Kļinas režīms Korejā: Ziemeļkoreja ir totalitāra valsts ar centrālizētu varu, kas kontrolē visus aspektus sabiedrības dzīvē.';
+          document.getElementById("3").innerHTML='Vēsture';
+          document.getElementById("4").innerHTML='Feodālisms un monarhija: Agrīnajās sabiedrībās varas struktūras bieži bija balstītas uz feodālismu, kur valdnieks vai monarhs, kuru atbalstīja zemes īpašnieku klase, izvirzījās kā centrālais politiskais spēks. Monarhija bija dominējošais modelis viduslaikos.<br><br>Politiskās revolūcijas: Dažas no vēsturiskajām politiskajām revolūcijām spēlēja būtisku lomu jaunu politisko režīmu veidošanā. Piemēram, Amerikas un Francijas revolūcijas 18. gadsimtā veicināja demokrātisku vērtību izplatīšanos un noveda pie konstitucionālām pārvaldes formām.<br><br>Nacionālās valstis un modernitāte: Ideja par nacionālajām valstīm kļuva dominējoša 19. gadsimtā. Nacionālās identitātes attīstība un cīņa par neatkarību veidoja pamatu jaunām valstīm un politiskajiem režīmiem.<br><br>Revolūcijas un totalitārisms: 20. gadsimta politiskās revolūcijas, piemēram, Krievijas 1917. gada revolūcija un ķīniešu revolūcija 1949. gadā, radīja apstākļus jaunu politisko režīmu izveidei. Totalitārie režīmi, kas izvirzījās šajās revolūcijās, piemēram, komunisms un fašisms, bija pretrunīgi modeļi ar autoritāru vadību.<br><br>Dekolonizācija: Pēc Otrā pasaules kara decolonizācijas procesā daudzas bijušās kolonijas ieguva neatkarību un izveidoja jaunus politiskos režīmus, pamatojoties uz savām vērtībām un tradīcijām.<br><br>Aukstais karš: Aukstā kara periodā valstis sadalījās divos blokos - Rietumu blokā vadīto ASV un Austrumu blokā vadīto Padomju Savienību. Šī sadalījuma rezultātā daudzas valstis izvēlējās savu politisko sistēmu, ņemot vērā aukstā kara geopolitiskos apstākļus.';
+          document.getElementById("4.1").className='col-md-12 bg-light text-dark p-4';
+          document.getElementById("5.1").className='col-0 bg-light text-dark p-4';
+          document.getElementById("5").innerHTML='';
+          document.getElementById("6").innerHTML='Kāds ir Latvijas režīma veids?';
+          document.getElementById("7").innerHTML='Latvija ir demokrātiska valsts, to garantē Latvijas Satversme. Pirmais pants nosaka, ka Latvija ir demokrātiska republika, 2.pants, ka vara pieder Latvijas tautai. Cilvēktiesību jautājumi aplūkoti Satversmes 8.nodaļā. ';
+          document.getElementById("8").innerText='Latvijā nav likuma, kas nosaka vispārējus iedzīvotāju pienākumus pret valsti, tiek uzskatīts, ka ikviena cilvēka pienākums ir ievērot likumus. Likumos ir norādīti atsevišķu sociālo un profesionālo grupu, arī amatpersonu pienākumi.';
+          document.getElementById("9").innerHTML='';
+        }
+
+       
+          function openNewPage() 
+          {
+            document.getElementById("1").innerHTML='Politiskie režīmi';
+            document.getElementById("11").innerHTML='Šeit Jūs varat iepazīties ar papildus informāciju par politikas socioloģiju';
+            document.getElementById("2").innerHTML='<a class="text-uppercase " href="https://enciklopedija.lv/skirklis/1233-politikas-sociolo%C4%A3ija">Politikas socioloģija</a>';
+            document.getElementById("3").innerHTML='Politiskās sistēmas, režīmi un valdības';
+            document.getElementById("4").innerHTML = '<iframe class="embed-responsive-16by9" width="300" height="" src="https://www.youtube.com/embed/TBTrKBa59kA?si=aZa3Ex6K7RlrZCTS" allowfullscreen></iframe>';
+            document.getElementById("4.1").className='col-md-6 bg-light text-dark p-4';
+            document.getElementById("5.1").className='col-6 bg-light text-dark p-4';
+            document.getElementById("5").innerHTML='<iframe class="embed-responsive-16by9" src="https://www.youtube.com/embed/LBFXD06fudM" allowfullscreen></iframe>';
+            document.getElementById("6").innerHTML='Uzdevumi treniņam';
+            document.getElementById("7").innerHTML='<a class="task" href="https://www.uzdevumi.lv/p/vesture/12-klase/totalitarisms-autoritarisms-eiropa-6548"><button>Totalitārisms, autoritārisms Eiropā</button></a><br><br> <a class="task" href="https://www.uzdevumi.lv/p/latvijas-vesture/9-klase/latvijas-republika-starpkaru-perioda-politika-un-saimnieciba-11787/autoritarais-rezims-11791 "><button>Autoritārisms Eiropa</button></a><br><br><a class="task" href="https://www.uzdevumi.lv/p/kulturologija/12-klase/vara-7892/tv-9785767d-2d80-40fd-aaad-0d0ee16b4898"><button>Demokrātiskas varas sabiedrība</button></a>';
+            document.getElementById("8").innerHTML = '';
+
+            document.getElementById("9").innerHTML='';
+          }
+      </script>
+  </head>
+  <body>
+    <div class="top-body-background">
+      <div class="container-fluid text-center flex-grow-1 bg-dark my-5 text-light p-4">
+        <h3 id="1">POLITISKIE REŽĪMI</h3>
+          <p>
+            Renāts Strods | Tomass Elksniņš | Gustavs Erzams
+          </p>
+      </div>
+    </div>
+    <div class="masthead" style="background-image: url('./images/gg.png');">
+        <div class="container text-center flex-grow-1 my-5">
+          <div class="row">
+            <div class="col-md-6 custom-background text-dark p-4">
+                <h3 class="fw-bold text-dark p-4 "id="11">Politiskie režīmi</h3>
+            </div>
+            <div class="col-md-6 text-md-start custom-background text-dark p-4">
+              <p id="2">
+                Politiskā situācija, politiskā sistēma valstī, varas veidošanās un dalīšanās process, varas resursu izvietojums un to izmantošana - tie visi ir faktori, kas veido politiskās attiecības valstī. Svarīga nozīme to skaidrojumā un izpratnē ir politiskā režīma jēdzienam. PSRS, Itālijas, Vācijas, Amerikas, arī Latvijas un citu valsts veidošanos būtiski un radikāli ir ietekmējuši politiskie režīmi. Politiskie režīmi, to izpratne ir neatņemama sastāvdaļa no vēstures, politikas, arī no tā, kā mēs to izprotam un redzam mūsdienās.
+              </p>
+            </div>
+          </div>
+      </div>
+    </div>
+  
+
+    <div class="custom-backgroundins">
+      <div class="col-md-12">
+        <h3 id="3" class="container-fluid text-center flex-grow-1 my-5 bg-dark text-light p-4">Režīmi un to raksturojums</h3>
+      </div>
+      <div class="container text-center flex-grow-1 my-5">
+        <div class="row">
+          <div id="4.1" class="col-md-12 custom-background text-dark p-4">
+            <h4 id="4">Demokrātija: Varas izcelsme no pilsoņiem, lēmumu pieņemšana notiek balsojot. Varas sadalījums un iestāžu neatkarība.<br><br> Autoritārisms: Centrālā vara kontrolē politisko procesu, lēmumu pieņemšana ierobežota. Varas koncentrācija centrālajā valdībā vai autoritatīvajā iestādē.<br><br>  Totalitārisms: Valdības kontrole pār gandrīz visiem sabiedrības aspektiem. Represijas un pilnvaru koncentrēšana valsts rokās.<br><br>Monarhija: Valsts vadītājs ir monarhs, var būt ķēnišs vai ķēnē. Var būt absolūta monarhija ar pilnu varu vai konstitucionāla ar ierobežojumiem.<br><br>Sociālisms un komunisms: Valsts kontrole pār ekonomiku un produktīvajiem resursiem, bet ar atšķirīgu pieeju klases neesamībai un īpašuma pārejai sabiedriskajā īpašumā.</h4>
+          </div>
+          <div id="5.1" class="col-md-0 custom-background text-dark p-4">
+            <p id="5">
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="masthead" style="background-image: url('./images/gg.png');">
+      <div class="col-md-12">
+        <h3 id="6" class="container-fluid text-center flex-grow-1 my-5 bg-dark text-light p-4">Kāds ir Latvijas režīma veids?</h3>
+      </div>
+      <div class="container text-center flex-grow-1 my-5">
+        <div class="row">
+          <div class="col-md-12 custom-background text-dark p-4">
+            <h5 id="7">Latvija ir demokrātiska valsts, to garantē Latvijas Satversme. Pirmais pants nosaka, ka Latvija ir demokrātiska republika, 2.pants, ka vara pieder Latvijas tautai. Cilvēktiesību jautājumi aplūkoti Satversmes 8.nodaļā.</h5>
+          </div>
+          <div id="8" class="col-md-0 custom-background text-dark p-4">
+            <p>
+              Latvijā nav likuma, kas nosaka vispārējus iedzīvotāju pienākumus pret valsti, tiek uzskatīts, ka ikviena cilvēka pienākums ir ievērot likumus. Likumos ir norādīti atsevišķu sociālo un profesionālo grupu, arī amatpersonu pienākumi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer class="bg-body-tertiary text-center text-lg-start">
+  
+    <div class="footer-background">
+    <div class="container p-4">
+      <div class="row">
+        <div class="text-center">
+          <a id="9" class="text-uppercase " href="https://tezaurs.lv/mwe:374474">Links</a>
+      </div>
+    </div>
+  </div>
+  </footer>
+  <style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    html.s100 {
+      font-size: 100%;
+    }
+    html.s150 {
+      font-size: 150%;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .image {
+      background: url(./images/test.jpg) no-repeat center center;
+      background-size: cover;
+      aspect-ratio: 1;
+    }
+    .crop-text {
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      font-weight: bold;
+    }
+    .masthead
+    {
+      background-size: cover;
+      min-height: 30vh;
+      position: relative;
+      color: white;
+      text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+
+    }
+    .color-overlay
+    {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+    }
+    @media (max-width:768px)
+    {
+      .masthead
+      {
+        min-height: 15vh;
+      }
+    }
+    .custom-background {
+      background-color: rgba(255, 255, 255, 0.6); /* Adjust the last value (alpha) between 0 (completely transparent) and 1 (completely opaque) */
+    }
+    .footer-background, .custom-backgroundins, .menu-background, .top-body-background{ 
+      background-color: rgb(168, 122, 35);
+    }
+  </style>
+</html>
